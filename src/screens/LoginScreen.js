@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Image } from 'react-native';
 import HeaderIconsContainer from '../components/HeaderIconsContainer'
 import HeaderIconButton from '../components/HeaderIconButton'
-import Heading from '../components/Heading';
 import Input from '../components/Input';
 import FilledButton from '../components/FilledButton';
 import TextButton from '../components/TextButton';
@@ -16,23 +15,14 @@ function LoginScreen({ navigation }) {
             headerRight: () => (
                 <HeaderIconsContainer>
                     <HeaderIconButton
-                    // name={'keyboard-arrow-left'}
-                    // onPress={() => {
-                    //     // switchTheme();
-                    // }}
                     />
 
                 </HeaderIconsContainer>
             ),
             headerLeft: () => (
                 <HeaderIconsContainer>
-
                     <HeaderIconButton
-                        name={'keyboard-arrow-left'}
-                    // onPress={() => {
-                    //     logout();
-                    // }}
-                    />
+                        name={'keyboard-arrow-left'} />
                 </HeaderIconsContainer>
 
             ),

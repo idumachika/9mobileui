@@ -12,12 +12,7 @@ export default function RegistrationScreen({ navigation }) {
         navigation.setOptions({
             headerRight: () => (
                 <HeaderIconsContainer>
-                    <HeaderIconButton
-                    // name={'keyboard-arrow-left'}
-                    // onPress={() => {
-                    //     // switchTheme();
-                    // }}
-                    />
+                    <HeaderIconButton />
 
                 </HeaderIconsContainer>
             ),
@@ -26,7 +21,7 @@ export default function RegistrationScreen({ navigation }) {
 
                     <HeaderIconButton
                         name={'keyboard-arrow-left'}
-                    // onPress={() => this.props.navigation.navigate.goBack()}
+                        onPress={() => navigation.navigate("Login")}
                     />
                 </HeaderIconsContainer>
 

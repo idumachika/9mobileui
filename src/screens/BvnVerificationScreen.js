@@ -1,10 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import Heading from '../components/Heading';
 import Input from '../components/Input';
 import FilledButton from '../components/FilledButton';
-import AuthContainer from '../components/AuthContainer';
-import TextButton from '../components/TextButton';
 import AccordionView from '../components/BvnCollapsible';
 import HeaderIconsContainer from '../components/HeaderIconsContainer'
 import HeaderIconButton from '../components/HeaderIconButton'
@@ -43,9 +40,7 @@ export default function BvnVerificationScreen({ navigation }) {
 
                     <HeaderIconButton
                         name={'keyboard-arrow-left'}
-                    // onPress={() => {
-                    //     logout();
-                    // }}
+                        onPress={() => navigation.navigate("Register")}
                     />
                 </HeaderIconsContainer>
 
@@ -91,7 +86,7 @@ export default function BvnVerificationScreen({ navigation }) {
             <FilledButton
                 title={'Continue'}
                 style={styles.loginButton}
-                onPress={() => navigation.navigate("")}
+                onPress={() => navigation.navigate("SelectGender")}
             />
         </View>
     );
