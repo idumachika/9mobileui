@@ -8,6 +8,8 @@ target 'KudaBank' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'RNCPicker', :path => '../node_modules/@react-native-picker/picker'
+
   target 'KudaBankTests' do
     inherit! :complete
     # Pods for testing

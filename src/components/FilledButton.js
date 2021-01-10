@@ -7,7 +7,9 @@ export default function FilledButton({ title, style, onPress }) {
 
     return (
         <TouchableOpacity
-            style={[styles.container, style, { backgroundColor: "rgb(103,58,183)" }]}
+            style={[styles.container, style, {
+                backgroundColor: "#006848"
+            }]}
             onPress={onPress}>
             <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 20,
+        padding: 17,
         borderRadius: 8,
     },
     text: {

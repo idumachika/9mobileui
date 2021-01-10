@@ -9,11 +9,9 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from './src/screens/LoginScreen';
-import SignUpScreen from './src/screens/RegistrationScreen';
-import BvnVerificationScreen from './src/screens/BvnVerificationScreen';
-import SelectGender from './src/screens/SelectGender';
-import PinLogin from './src/screens/PinLogin';
+import LoginScreen from './src/screens/Dasboard';
+import SignUpScreen from './src/screens/NewPassword';
+import PinLogin from './src/screens/Security&Privacy';
 
 
 
@@ -26,18 +24,15 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen
           name="Login"
-          component={LoginScreen} />
+          component={LoginScreen}
+          options={{ headerShown: false }} />
         <Stack.Screen
           name="Register"
+          options={{ headerShown: false }}
           component={SignUpScreen} />
         <Stack.Screen
-          name="BvnVerification"
-          component={BvnVerificationScreen} />
-        <Stack.Screen
-          name="SelectGender"
-          component={SelectGender} />
-        <Stack.Screen
           name="Pinlogin"
+          options={{ headerShown: false }}
           component={PinLogin} />
       </Stack.Navigator>
 
