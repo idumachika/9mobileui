@@ -152,21 +152,8 @@ export default class More extends React.Component {
 
                                 <View style={{ justifyContent: "center", alignItems: "center" }}>
 
-                                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Register')} style={{
-                                        backgroundColor: '#fff',
-                                        borderRadius: 15,
-                                        elevation: 8,
-                                        width: 80,
-                                        height: 80,
-                                        justifyContent: 'center',
-                                        alignItems: 'center',
-                                        marginBottom: 10
-
-
-                                    }}>
+                                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Register')} style={styles.cardTab}>
                                         {user.Icon}
-
-
                                     </TouchableOpacity>
 
                                     <Text style={{ color: "#172b4d", fontSize: 12 }}>{user.item}</Text>
@@ -207,6 +194,16 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.theme,
         paddingBottom: Layout.height * 0.13,
 
+    },
+    cardTab: {
+        backgroundColor: '#fff',
+        borderRadius: 15,
+        elevation: 8,
+        width: 80,
+        height: 80,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10
     },
 
     card: {
